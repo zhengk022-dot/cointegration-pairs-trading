@@ -28,13 +28,13 @@ dS = κ(μ − S)dt + σdW
 ```
 
 Parameters estimated via AR(1) regression on the discretised process.
-**Half-life: 23.3 days** (κ = 0.030) — fast enough to generate ~10 round
+**Half-life: 23.3 days** (κ = 0.030) - fast enough to generate ~10 round
 trips per year while remaining slow enough that 1bp/side transaction costs
 do not erode the signal.
 
-### 3. Kalman Filter — Dynamic Hedge Ratio
+### 3. Kalman Filter - Dynamic Hedge Ratio
 The hedge ratio β between V and MA is not constant. OLS assumes a fixed
-relationship; in practice β drifted from ~0.80 (2015) to ~0.60 (2024) — a
+relationship; in practice β drifted from ~0.80 (2015) to ~0.60 (2024) - a
 25% shift. A static hedge ratio would systematically miscalculate the spread
 during this transition, generating false signals.
 
@@ -46,7 +46,7 @@ enough to track drift, stable enough to avoid overfitting to daily noise.
 
 ### 4. Strategy
 - Signal: z-score of rolling-OLS spread (60-day normalisation window)
-- Entry: |z| > 2.0 — long spread when cheap, short when expensive
+- Entry: |z| > 2.0 - long spread when cheap, short when expensive
 - Exit: z crosses 0 (mean reversion complete)
 - Transaction costs: 1bp per side
 
