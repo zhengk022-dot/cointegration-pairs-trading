@@ -64,7 +64,7 @@ No parameter re-fitting on the test set.
 | Bootstrap 95% CI (Sharpe) | [0.04, 1.58] | [−0.51, 1.70] |
 
 The 26% Sharpe decay is modest. The wide bootstrap CI reflects the
-statistical reality of estimating Sharpe from ~750 daily observations —
+statistical reality of estimating Sharpe from ~750 daily observations -
 3 years of data is not enough for a tight estimate regardless of strategy
 quality. A tighter CI requires 5+ years of out-of-sample data.
 
