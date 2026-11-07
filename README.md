@@ -59,8 +59,8 @@ No parameter re-fitting on the test set.
 | Metric | In-sample (2015–2020) | Out-of-sample (2021–2024) |
 |---|---|---|
 | Sharpe ratio | 0.80 | 0.59 |
-| Total PnL | — | 82.34 |
-| Max drawdown | — | −33.34 |
+| Total PnL | 46.82 | 82.34 |
+| Max drawdown | -13.05 | −33.34 |
 | Bootstrap 95% CI (Sharpe) | — | [−0.51, 1.70] |
 
 The 26% Sharpe decay is modest. The wide bootstrap CI reflects the
