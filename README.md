@@ -61,7 +61,7 @@ No parameter re-fitting on the test set.
 | Sharpe ratio | 0.80 | 0.59 |
 | Total PnL | 46.82 | 82.34 |
 | Max drawdown | -13.05 | −33.34 |
-| Bootstrap 95% CI (Sharpe) | — | [−0.51, 1.70] |
+| Bootstrap 95% CI (Sharpe) | [0.04, 1.58] | [−0.51, 1.70] |
 
 The 26% Sharpe decay is modest. The wide bootstrap CI reflects the
 statistical reality of estimating Sharpe from ~750 daily observations —
